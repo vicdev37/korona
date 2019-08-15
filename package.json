@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "parcel ./pug/index.pug",
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup",
     "build": "parcel build ./pug/index.pug parcel --public-url ./"
   },
   "keywords": [],
@@ -14,6 +15,8 @@
   "devDependencies": {
     "cssnano": "^4.1.10",
     "pug": "^2.0.3",
+    "parcel-bundler": "^1.12.3",
+    "push-dir": "^0.4.1",
     "sass": "^1.19.0"
   },
   "dependencies": {
