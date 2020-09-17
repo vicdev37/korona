@@ -5,7 +5,6 @@ window.$ = window.jQuery = jquery;
 
 $(document).ready(() => {
   console.log($('body'))
-  console.log('a')
   module()
 })
 

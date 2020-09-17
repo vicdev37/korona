@@ -1,34 +1,11 @@
-body {
-  background: $green;
+.font-bold {
+  font-weight: $bold;
 }
 
-.main {
-  display: grid;
+.font-medium {
+  font-weight: $medium;
 }
 
-.block {
-  display: flex;
-  width: 200px;
-  height: 200px;
+.font-regular-moon {
+  font-family: $font-moon-family;
 }
-
-.block-1 {
-  background: red;
-}
-
-.block-2 {
-  background: white;
-}
-
-.block-3 {
-  background: blue;
-}
-
-.block-4 {
-  background: url('../images/burger.svg') no-repeat center;
-}
-
-.image img {
-  object-fit: cover;
-}
-
