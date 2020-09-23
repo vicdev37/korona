@@ -1,5 +1,7 @@
 @import 'normalize.css';
-@import '_variables.scss';
-@import '_mixins.scss';
-@import '_base.scss';
-@import 'main.scss';
+
+@import 'preferences/_variables.scss';
+@import 'preferences/_mixins.scss';
+@import 'preferences/_base.scss';
+
+@import 'pages/main.scss';

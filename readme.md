@@ -1,3 +1,6 @@
-install: npm install  
-dev: parcel index.pug  
-build: parcel build index.pug parcel --public-url ./
+## start localhost
+npm start
+## build
+npm run build  
+
+entrypoint - src/pug/pages/index.pug
