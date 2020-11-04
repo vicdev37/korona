@@ -1,18 +1,265 @@
 extends ../layout/layout.pug
 
 block content
+  .modal.popup-call.hide
+    button.form-close
+      | ×
+    .modal-dialog
+      form#form
+        .modal-content
+          .modal-header
+            .modal-header__title
+              | Заказать обратный звонок
+            .modal-header__subtitle
+              | Заполните форму ниже, и наш специалист перезвонит Вам в ближайшее время
+          .modal-body 
+            input(type="text" id="name" class="modal-phone" placeholder="Введите Ваше имя")
+            input(type="phone" id="phone" name="phone" class="modal-phone" placeholder="Введите Ваш номер телефона")
+            #errorMassage
+            button(class="modal-submit") Заказать звонок
+            //- .warning
+            //-   | Нажимая кнопку "Заказать звонок", Вы соглашаетесь на 
+            //-   a(href="#" class="oferta-link") обработку персональных данных.   
+
+          
   main.main
-    .font-regular
-      | ELLANSÉ® предназначен для субдермальных инъекций. Благодаря своей когезивности, ELLANSÉ® может легко приобретать необходимую форму, обеспечивая большую точность при коррекции формы и контуров
-    .font-bold
-      | ELLANSÉ® предназначен для субдермальных инъекций. Благодаря своей когезивности, ELLANSÉ® может легко приобретать необходимую форму, обеспечивая большую точность при коррекции формы и контуров
-    .font-medium
-      | ELLANSÉ® предназначен для субдермальных инъекций. Благодаря своей когезивности, ELLANSÉ® может легко приобретать необходимую форму, обеспечивая большую точность при коррекции формы и контуров
-    .font-regular-moon
-      | ELLANSÉ® предназначен для субдермальных инъекций. Благодаря своей когезивности, ELLANSÉ® может легко приобретать необходимую форму, обеспечивая большую точность при коррекции формы и контуров
-    .image
-      img(src="../../images/header-1.jpg")
-    .svg 
-      include ../../images/svg/sinclair.svg
-    a(href="./second-page.pug")
-      | second-page
+    a(href="#" class="menu-btn")
+      span
+    .header-nav__mobile
+      ul
+        li
+          a(href="#why-we") Почему мы? 
+        li     
+          a(href="#") Тарифы
+        li  
+          a(href="#features") Дополнительные услуги 
+        li  
+          a(href="#another-features") Иные виды юридических услуг
+        li
+          a(href="#about-us") О нас     
+        li  
+          a(href="#contacts") Контакты  
+    header
+      .header-top__wrapper
+        .header-left
+          .main-logo
+            img(src='../../images/main-logo.png' alt='main-logo')
+          .header-text__wrapper 
+            //- .logo-title
+            //-   | ВСЕ ВИДЫ <br> ЮРИДИЧЕСКИХ УСЛУГ 
+            .logo-subtitle
+              | ЮРИДИЧЕСКАЯ <br>КОМПАНИЯ
+          
+        .header-center
+          .header-nav
+            ul
+              li
+                a(href="#why-we") Почему мы? 
+              li     
+                a(href="#") Тарифы
+              li  
+                a(href="#features") Дополнительные услуги 
+              li  
+                a(href="#another-features") Иные виды юридических услуг
+              li
+                a(href="#about-us") О нас     
+              li  
+                a(href="#contacts") Контакты
+                
+               
+            
+        .header-right
+          //- .header-phones
+          //-   <a href="tel: 8(863)261-55-72">8(863)261-55-72</a>
+          //-   <a href="tel: +7-951-828-0939">+7-951-828-0939  </a>
+          .header-call
+            | ЗАКАЗАТЬ ЗВОНОК  
+      .header-main
+        .container
+          .header-main__wrapper
+            .header-main-text__wrapper
+              .header-title
+                | Гарантированно спишем Ваши долги перед кредиторами
+              .header-subtitle
+                | С помощью нашей компании и путем реализации Вашего законного права, <br> вся сумма задолженности будет списана
+              .header-call
+                | СПИСАТЬ ДОЛГИ
+            .header-img
+              img(src="../../images/kisspng-rubiks-cube-rubiks-magic-vector-cube-5a94919294da20.0523703315196860346097.png")
+
+  section.why-we#why-we
+    .container
+      .section-title Почему мы?
+      .why-we__wrapper
+        .why-we_block
+          .why-we_image
+            img(src="../../images/1.svg" alt="Image") 
+          .why-we_description Гарантия результата
+        .why-we_block
+          .why-we_image
+            img(src="../../images/2.svg" alt="Image") 
+          .why-we_description Приемлемые цены
+        .why-we_block
+          .why-we_image
+            img(src="../../images/3.svg" alt="Image") 
+          .why-we_description Рассрочка по оплате услуг
+        .why-we_block
+          .why-we_image
+            img(src="../../images/4.svg" alt="Image") 
+          .why-we_description Свой финансовый управляющий
+        .why-we_block
+          .why-we_image
+            img(src="../../images/5.svg" alt="Image") 
+          .why-we_description Профессионалы своего дела
+        .why-we_block
+          .why-we_image
+            img(src="../../images/6.svg" alt="Image") 
+          .why-we_description Наш опыт
+        .why-we_block
+          .why-we_image
+            img(src="../../images/7.svg" alt="Image") 
+          .why-we_description Гибкий подход к каждому клиенту
+        .why-we_block
+          .why-we_image
+            img(src="../../images/8.svg" alt="Image") 
+          .why-we_description Всегда на связи
+        .why-we_block
+          .why-we_image
+            img(src="../../images/9.svg" alt="Image") 
+          .why-we_description Полное сопровождение всей процедуры банкротства
+        .why-we_block
+          .why-we_image
+            img(src="../../images/10.svg" alt="Image") 
+          .why-we_description Защита Ваших интересов от посягательств со стороны коллекторов и сотрудников кредитора
+      .why-we_block-another
+        .why-we_image
+          img(src="../../images/11.svg" alt="Image") 
+        .why-we_description Наша деятельность максимально прозрачна и носит исключительно законный характер
+    //- a(href="./second-page.pug")
+    //-   | second-page
+
+  section.features#features  
+    .container
+      .section-title Дополнительные услуги 
+      .features__wrapper
+        .features_item
+          .features_item-img
+            img(src="../../images/positive-vote.svg" alt="positive")  
+          .features_item-description
+            | Подготовка заявления об отмене судебного приказа   
+        .features_item
+          .features_item-img
+            img(src="../../images/positive-vote.svg" alt="positive")  
+          .features_item-description
+            | Подготовка заявления об отмене заочного решения  
+        .features_item
+          .features_item-img
+            img(src="../../images/positive-vote.svg" alt="positive")  
+          .features_item-description
+            | Подготовка заявления о повороте исполнения решения суда   
+        .features_item
+          .features_item-img
+            img(src="../../images/positive-vote.svg" alt="positive")  
+          .features_item-description
+            | Подготовка жалобы на действие (бездействие) судебного пристава   
+        .features_item
+          .features_item-img
+            img(src="../../images/positive-vote.svg" alt="positive")  
+          .features_item-description
+            | Подготовка жалобы на действие кредитной организации либо коллекторского агентства   
+        .features_item
+          .features_item-img
+            img(src="../../images/positive-vote.svg" alt="positive")  
+          .features_item-description
+            | Подготовка заявления об отказе от навязанной услуги страхования   
+        .features_item
+          .features_item-img
+            img(src="../../images/positive-vote.svg" alt="positive")  
+          .features_item-description
+            | Подготовка заявления о снятии с регистрационного учета имущества выбывшего из владения гражданина на законном основании  
+        .features_item
+          .features_item-img
+            img(src="../../images/positive-vote.svg" alt="positive")  
+          .features_item-description
+            | Представление интересов в судах общей юрисдикции по обособленным спорам   
+        .features_item
+          .features_item-img
+            img(src="../../images/positive-vote.svg" alt="positive")  
+          .features_item-description
+            | Иные юридические действия   
+
+  section.another-features#another-features
+    .container
+      .section-title
+        | Иные виды юридических услуг
+      .another-features__wrapper
+        .another-features__items
+          .another-features_item
+            .another-features_item-img
+              img(src="../../images/check.svg" alt="check")
+            .another-features_item-description
+              | Представление интересов в судах общей юрисдикции и арбитражных судах (во всех инстанциях)          
+          .another-features_item
+            .another-features_item-img
+              img(src="../../images/check.svg" alt="check")
+            .another-features_item-description
+              | Представление интересов в государственных органах
+          .another-features_item
+            .another-features_item-img
+              img(src="../../images/check.svg" alt="check")
+            .another-features_item-description
+              | Подготовка заявлений, обращений, претензий, исковых заявлений
+          .another-features_item
+            .another-features_item-img
+              img(src="../../images/check.svg" alt="check")
+            .another-features_item-description
+              | Подготовка любых процессуальных документов
+          .another-features_item
+            .another-features_item-img
+              img(src="../../images/check.svg" alt="check")
+            .another-features_item-description
+              | Подготовка апелляционной, кассационной, надзорной жалобы
+          .another-features_item
+            .another-features_item-img
+              img(src="../../images/check.svg" alt="check")
+            .another-features_item-description
+              | Подготовка жалоб на сотрудников государственных органов
+          .another-features_item
+            .another-features_item-img
+              img(src="../../images/check.svg" alt="check")
+            .another-features_item-description
+              | Подготовка договоров любой сложности
+          .another-features_item
+            .another-features_item-img
+              img(src="../../images/check.svg" alt="check")
+            .another-features_item-description
+              | Сопровождение деятельности ИП и юридических лиц
+          .another-features_item
+            .another-features_item-img
+              img(src="../../images/check.svg" alt="check")
+            .another-features_item-description
+              | Оказание юридических услуг в любой отрасли юриспруденции
+        .another-features__img
+          img(src="../../images/kisspng-constance-l-rice-california-personal-injury-lawye-lawyer-png-transparent-image-5a76b9bb29af07.9880151815177302351708.png")
+
+  section.about-us#about-us
+    .container
+      .section-title
+        | О нас
+      .about-us_text
+        | Юридическая компания «Корона» это команда профессионалов,
+        |  специализирующихся на оказании юридических услуг. Основным
+        |  направлением деятельности нашей компании является сопровождение
+        |  процедуры банкротства физических лиц в соответствии с Федеральный закон
+        |  &quot;О несостоятельности (банкротстве)&quot; от 26.10.2002 N 127-ФЗ
+        |  Наша компания была создана в 2009 году.
+        |  В нашем штате имеются юристы, специалисты с многолетним опытом в
+        |  области банкротства, а также в области общей юриспруденции.
+        |  Если у вас существует задолженность перед кредиторами, а платить
+        |  возможности больше нет, тогда для Вас предусмотрен законный способ
+        |  списать задолженность перед кредиторами, путем прохождения процедуры
+        |  банкротства. После завершения процедуры банкротства вся Ваша
+        |  задолженность будет списана на основании судебного решения.  
+
+
+  

@@ -5,8 +5,9 @@ html(lang="en")
   head
     meta(charset="utf-8")
 
-    title My Site - #{title}
+    title Корона - #{title}
     meta(name="description" content="The HTML5 Herald")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1")
     block scripts
       script(src='../../js/index.js')
     block styles
@@ -14,5 +15,40 @@ html(lang="en")
   body
     block content
     block foot
-      #footer
-        p some footer content
+      footer#contacts
+        .container
+          .footer__wrapper
+            .left
+              | © Все права защищены
+            .center
+              .header-nav
+                ul
+                  li
+                    a(href="#why-we") Почему мы? 
+                  li     
+                    a(href="#") Тарифы
+                  li  
+                    a(href="#features") Дополнительные услуги 
+                  li  
+                    a(href="#another-features") Иные виды юридических услуг
+                  li
+                    a(href="#about-us") О нас     
+                  li  
+                    a(href="contacts") Контакты  
+            .right
+              .contact-block
+                .contact-item 
+                  | Адрес: 344029, г. Ростов-на-Дону, <br> ул. Вильнюсская, 6
+                  .way
+                    a(href="https://maps.google.com?saddr=Current+Location&daddr=47.253148,39.768415")
+                      | Проложить маршрут
+                .contact-item.contact-phones
+                  span Телефоны:
+                  .phones
+                    <a href="tel: 8(863)231-20-55">8(863)231-20-55</a>
+                    <a href="tel: +7-951-828-09-39">+7-951-828-09-39  </a>
+                    <a href="tel: +7-909-433-43-48">+7-909-433-43-48  </a>
+                .contact-item
+                  span E-mail: 
+                  a(href="mailto:korona-bankrot@mail.ru") korona-bankrot@mail.ru
+        

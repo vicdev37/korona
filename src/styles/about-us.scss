@@ -1,0 +1,25 @@
+.about-us {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  
+  background: #1565C0; 
+  
+  .section-title {
+    margin-top: 0;
+    color: #ffffff;
+  }
+}
+
+.about-us_text {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 40px;
+}
+
+@media (max-width: 480px) {
+  .about-us_text {
+    font-size: 15px;
+    line-height: 28px;
+  }
+}
